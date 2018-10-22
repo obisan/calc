@@ -4,6 +4,7 @@
 #include "core/Evaluator.h"
 
 void calc(const char *text);
+void tests();
 
 int main() {
 
@@ -19,6 +20,12 @@ int main() {
 
     }
 
+    //tests();
+
+    return 0;
+}
+
+void tests() {
     calc("1+2 + 3+4");
     calc("1*2*3*4");
     calc("1-2-3-4");
@@ -42,8 +49,6 @@ int main() {
     calc("1 * 2.5.6");
     calc("1 ** 2.5");
     calc("*1 / 2.5");
-
-    return 0;
 }
 
 void calc(const char *text) {
